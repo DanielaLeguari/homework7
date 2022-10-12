@@ -63,11 +63,11 @@ $perfil-bg-secoes: #FFFFFF;
 
 /*perfil-secao-main*/
 .perfil-main {
-    width:90vw;
+    width: 90vw;
     height: calc(100vh - 60px);
     display: grid;
     gap: 15px;
-    margin:0 auto;
+    margin: 0 auto;
     grid-template-areas:
         "perfil-secao-cabecalho perfil-secao-cabecalho perfil-secao-cabecalho"
         "perfil-secao-endereco perfil-secao-endereco perfil-secao-endereco"
@@ -114,34 +114,44 @@ $perfil-bg-secoes: #FFFFFF;
     grid-area: perfil-secao-colegas;
     background-color: $perfil-bg-secoes;
     margin-bottom: 20px;
-    
-
 }
 
 
 
-.perfil-secao-colegas{
-   font-family: $perfil-fonte-principal; 
-     
-    .perfil-titulo-colegas{
+.perfil-secao-colegas {
+    font-family: $perfil-fonte-principal;
+
+    .perfil-titulo-colegas {
         font-weight: 400;
         color: $perfil-cor-titulos;
         display: flex;
-        margin:0.5rem;
-     }
+        margin: 0.5rem;
+    }
 
-     .perfil-btn-secao-colegas{
+    .perfil-btn-secao-colegas {
         background-color: transparent;
         border: none;
         border-bottom: 1px solid $perfil-cor-titulos;
-        color:$perfil-cor-campos;
+        color: $perfil-cor-campos;
         padding: 0.5rem;
-        width: 300px; 
-        margin:0.5rem;
+        width: 50%;
+        margin: 0.5rem;
         cursor: pointer;
-        
-         
-     }
+    }
+
+    .perfil-secao-colegas-linha {
+        display: flex;
+        flex-direction: row;
+
+        .perfil-secao-colegas-feedback {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+    }
 }
 
 .perfil-secao-conhecimentos {
@@ -150,20 +160,20 @@ $perfil-bg-secoes: #FFFFFF;
     font-family: $perfil-fonte-principal;
     display: flex;
     height: 50%;
-    
+    flex-direction: column;
 
-    .perfil-titulo-conhecimentos{
+    .perfil-titulo-conhecimentos {
         color: $perfil-cor-titulos;
         margin: 1rem;
         font-weight: 400;
     }
 
-    .perfil-icone-livro{
+    .perfil-icone-livro {
         color: $perfil-cor-titulos;
         margin-right: 1rem;
     }
 
-    .perfil-btn-add{
+    .perfil-btn-add {
         background-color: $perfil-botao;
         border: none;
         border-radius: 20px;
@@ -173,9 +183,31 @@ $perfil-bg-secoes: #FFFFFF;
         margin: 1rem;
         cursor: pointer;
     }
+
+    .perfil-secao-conhecimento-linha{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        .perfil-secao-conhecimento-texto{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            flex-direction: column;
+        }
+    }
+
+    .perfil-secao-conhecimento-cabecalho{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        
+
+        
+    }
 }
-
-
-
-
 
