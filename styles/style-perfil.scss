@@ -1,33 +1,29 @@
-
 $perfil-cor-fonte-header: #ffffff;
 $perfil-cor-titulos: #137191;
-$perfil-cor-campos:#9391918a;
-$perfil-botao:#51BD88;
-$perfil-fonte-principal:'Roboto', sans-serif;
-$perfil-bg-principal:#dcd9d9;
+$perfil-cor-campos: #9391918a;
+$perfil-botao: #51BD88;
+$perfil-fonte-principal: 'Roboto', sans-serif;
+$perfil-bg-principal: #dcd9d9;
+$perfil-bg-secoes:#FFFFFF;
 
-.perfil-bg{
-    background-color:$perfil-bg-principal ;
+.perfil-bg {
+    background-color: $perfil-bg-principal ;
 }
-.perfil-header{
-    background:url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
+
+.perfil-header {
+    background: url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
     width: 100vw;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    
-  
-   
 
-
-    .perfil-header-item{
+    .perfil-header-item {
         display: flex;
-     
     }
 
-    .perfil-header-btn{
+    .perfil-header-btn {
         background-color: transparent;
         border: none;
         color: $perfil-cor-fonte-header;
@@ -38,13 +34,12 @@ $perfil-bg-principal:#dcd9d9;
         font-family: $perfil-fonte-principal;
     }
 
-    .perfil-header-btn:hover{
-        background-color: rgba(43, 42, 42, 0.5) ;
+    .perfil-header-btn:hover {
+        background-color: rgba(43, 42, 42, 0.5);
     }
-    
 }
 
-.perfil-logo{
+.perfil-logo {
     width: 100px;
     height: 40px;
     display: flex;
@@ -53,55 +48,75 @@ $perfil-bg-principal:#dcd9d9;
     padding-left: 1rem;
 }
 
-.perfil-foto-header{
+.perfil-foto-header {
     width: 40px;
     height: 40px;
-   margin: 0 1rem 0 1rem;
-    
+    margin: 0 1rem 0 1rem;
+
 }
 
-.perfil-icone-notificacao{
+.perfil-icone-notificacao {
     color: $perfil-cor-fonte-header;
     font-size: 20px;
     padding-top: 0.5rem;
-    
-}
 
-.perfil-main{
-    width: 100vw;
-    height: calc(100vh - 60px); 
-    display: grid;
-    grid-template-areas: 
-    "perfil-secao-cabecalho perfil-secao-cabecalho perfil-secao-cabecalho"
-    "perfil-secao-endereco perfil-secao-endereco perfil-secao-endereco"
-    "perfil-secao-colegas perfil-secao-colegas perfil-secao-conhecimentos";   
 }
 
 /*perfil-secao-main*/
-.perfil-item{
+.perfil-main {
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: grid;
+    grid-template-areas:
+        "perfil-secao-cabecalho perfil-secao-cabecalho perfil-secao-cabecalho"
+        "perfil-secao-endereco perfil-secao-endereco perfil-secao-endereco"
+        "perfil-secao-colegas perfil-secao-colegas perfil-secao-conhecimentos";
+}
+
+
+.perfil-item {
     margin: 30px 70px 30px 70px;
-
 }
-.perfil-secao-cabecalho{
+
+.perfil-secao-cabecalho {
     grid-area: perfil-secao-cabecalho;
-    background-color: #ffffff;
-    
+    background-color: $perfil-bg-secoes;
+
+    .perfil-informacoes-contato{
+        background: url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
+        height: 50%;
+        display: flex;
+        align-items: center;
+        color:$perfil-cor-fonte-header;
+        font-family: $perfil-fonte-principal;
+         .perfil-foto-coloborador{
+            align-items: center;
+            margin: 1rem;
+         }
+        .perfil-lista-dados{
+            list-style-type: none;
+            margin-left: 1rem;
+            line-height: 1.5rem;
+            font-size: 14px;
+         }
+    }
+
+    .perfil-informacoes-gerais{
+        height: 50%;
+    }
 }
 
-.perfil-secao-endereco{
+.perfil-secao-endereco {
     grid-area: perfil-secao-endereco;
-    background-color: #ffffff;
-    
+    background-color: $perfil-bg-secoes;
 }
 
 .perfil-secao-colegas {
-    grid-area: perfil-secao-colegas ;
-    background-color: #ffffff;
+    grid-area: perfil-secao-colegas;
+    background-color: $perfil-bg-secoes;
 }
 
 .perfil-secao-conhecimentos {
-    grid-area: perfil-secao-conhecimentos ;
+    grid-area: perfil-secao-conhecimentos;
     background-color: #ffffff;
 }
-
-
