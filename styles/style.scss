@@ -23,6 +23,7 @@ $home-bg-secoes: #F8F9FA;
     font-size: 1rem;
     font-weight: bold;
 }
+
 .home-bg {
     background-color: $perfil-bg-principal;
 }
@@ -49,19 +50,19 @@ $home-bg-secoes: #F8F9FA;
         .home-search {
             display: flex;
             justify-content: space-between;
-            width: 30vw;
-            height: 6vh;
+            width: 20vw;
+            height: 30px;
             font-size: 1.25rem;
             position: relative;
 
             .home-button-lente {
-                width: 3vw;
                 border: none;
                 background-color: transparent;
                 position: absolute;
-                top: 35%;
+                top: 30%;
                 right: 0;
                 outline: none;
+                width: 30px;
 
                 .home-lupa {
                     color: $perfil-cor-fonte-header;
@@ -122,12 +123,12 @@ $home-bg-secoes: #F8F9FA;
 .home-main {
     display: flex;
     justify-content: center;
-    margin-top: 16px;
     gap: 16px;
     height: calc(100vh - 60px);
     width: 100vw;
     font-family: $perfil-fonte-principal;
-
+    
+   
     .home-hr {
         border: 0;
         border-top: 1px solid #ccc;
@@ -143,9 +144,11 @@ $home-bg-secoes: #F8F9FA;
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
-        height: 100vh;
+        height: calc(100vh - 80px);
         width: 40%;
+        margin-top: 16px;
         background-color: $home-bg-secoes;
+        border-radius: 5px;
     }
 
     .home-item {
@@ -156,7 +159,10 @@ $home-bg-secoes: #F8F9FA;
             height: 200px;
             text-decoration: none;
             color: black;
-            background-color:darkorchid;
+            background-color:#ffffff;
+            box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+            border-radius: 5px;
+            margin-bottom: 16px;
 
             .home-img-card {
                 height: 200px;
@@ -172,7 +178,7 @@ $home-bg-secoes: #F8F9FA;
                 }
 
                 .home-texto {
-                    font-size: .875rem;
+                    font-size: .9rem;
                     margin-bottom: 16px;
                 }
 
@@ -185,8 +191,10 @@ $home-bg-secoes: #F8F9FA;
 
             .home-card-baixo{
                 display: flex;
+                align-items: flex-end;
                 justify-content: space-between;
                 font-size: .8125rem;
+                padding-top: 8px;
                 
                 .home-data-card {
                     font-size: .875rem;
@@ -202,12 +210,31 @@ $home-bg-secoes: #F8F9FA;
     /*aside*/
 
     .home-aside {
-        background-color:yellow;
-        height: 100vh;
-        width: 25%;
+        height: calc(100vh - 80px);
+        width: 23%;
+        margin-top: 16px;
         font-family: $perfil-fonte-principal;
+        
+
+        .home-item-aside {
+            background-color: #ffffff;
+            padding-top: 16px;
+            border-radius: 5px 5px 0 0 ;
+
+            .home-titulo-aside {
+                padding: 0 0 16px 16px;
+                font-size: .75rem;
+            }
+
+            .home-hr-aside {
+                border: 0;
+                border-top: 1px solid #ccc;
+                padding-bottom: 16px;
+            }
+        }
 
         .home-sistemas {
+            background-color:#ffffff;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(3, 1fr);
@@ -215,7 +242,7 @@ $home-bg-secoes: #F8F9FA;
             gap: 10px;
             
             .home-card-sistemas {
-                background-color: pink;
+                background-color: #ffffff;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -224,8 +251,65 @@ $home-bg-secoes: #F8F9FA;
                 text-align: center;
                 font-size: .875rem;
                 color: $perfil-botao;
-                width: 84px;    
+                text-decoration: none;
+                font-size: .75rem;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+            
+                .home-asside-icone {
+                    font-size: 2.25rem;
+                    margin-bottom: 5px;
+                }
+
             }
         }
-    } 
+    }
+    
+    .home-aniversarios{
+        margin-top: 16px;
+        background-color:#ffffff;
+        border-radius: 5px;
+
+        .home-titulo-aniversario {
+            padding: 16px;
+            font-size: .75rem;
+        }
+
+        .home-card-aniversario {
+            display: flex;
+            padding-bottom: 16px;
+            margin-top: 16px;
+
+            .home-img-no-user {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+            }
+
+            .home-card-aniversario-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-right: 20px;
+                padding-left: 20px;
+
+                .home-texto-nome-aniversario {
+                    margin-bottom: 8px;
+                }
+
+                .home-card-aniversario-item-footer{
+                    display: flex;
+
+                    .home-texto-data-aniversario {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+
+
