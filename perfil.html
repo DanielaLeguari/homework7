@@ -27,25 +27,55 @@
         </div>
     </header>
     <main class="perfil-main">
-        <section class="perfil-item perfil-secao-cabecalho">
-            <div class="perfil-cabecalho-usuario">
-                <div class="perfil-informacoes-contato">
-                    <img class="perfil-foto-coloborador" src="./img/header-foto.png" alt="">
-                    <ul>
-                        <li class="perfil-lista-dados">Login: Fulano de Tal</li>
-                        <li class="perfil-lista-dados">Email:teste@email.com</li>
-                        <li class="perfil-lista-dados">Nascimento: 00/00/0000</li>
-                    </ul>
+        <section class=" perfil-secao-cabecalho">
+
+            <div class="perfil-informacoes-contato">
+                <img class="perfil-foto-coloborador" src="./img/header-foto.png" alt="">
+                <ul>
+                    <li class="perfil-lista-dados">Login: Fulano de Tal</li>
+                    <li class="perfil-lista-dados">Email:teste@email.com</li>
+                    <li class="perfil-lista-dados">Nascimento: 00/00/0000</li>
+                </ul>
+            </div>
+            <div class="perfil-dados-usuario">
+                <div class="perfil-dados-usuario-linha">
+                    <div class="perfil-dados-usuario-coluna">
+                        <h3>Fulano de Tal</h3>
+                        <p>Estagiário</p>
+                        <p>Setor</p>
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="pronome">Pronome:</label>
+                        <select id="pronome" name="pronome" class="perfil-campos">
+                            <option value="1">Ela/Dela</option>
+                            <option value="2">Ele/Dele</option>
+                        </select>
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="gerente">Gerente de Recurso</label>
+                        <input type="text" id="gerente" value="Fulano" class="perfil-campos">
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" value="(55)1214-4511" class="perfil-campos">
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="ramal">Ramal</label>
+                        <input type="tel" id="ramal" value="Ramal" class="perfil-campos">
+                    </div>
                 </div>
-                <div class="perfil-informacoes-gerais">informacoes gerais</div>
+                <div class="perfil-dados-usuario-linha">
+                    
+                </div>
+
             </div>
         </section>
 
-        <section class="perfil-item perfil-secao-endereco">
+        <section class=" perfil-secao-endereco">
             <h3>Endereco</h3>
         </section>
 
-        <section class="perfil-item perfil-secao-colegas">
+        <section class=" perfil-secao-colegas">
             <h3 class="perfil-titulo-colegas">Veja o que nossos colegas estão falando sobre você</h3>
             <div class="perfil-secao-colegas-linha"><button class="perfil-btn-secao-colegas"
                     type="button">Recebidos</button>
@@ -56,7 +86,7 @@
             </div>
         </section>
         <!--secao conhecimentos-->
-        <section class="perfil-item perfil-secao-conhecimentos">
+        <section class=" perfil-secao-conhecimentos">
             <div class="perfil-secao-conhecimento-linha">
                 <div class="perfil-secao-conhecimento-cabecalho">
                     <h3 class="perfil-titulo-conhecimentos"><i
