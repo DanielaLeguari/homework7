@@ -258,7 +258,7 @@ $perfil-bg-secoes: #FFFFFF;
 
 .perfil-secao-conhecimentos {
     grid-area: perfil-secao-conhecimentos;
-    background-color: #ffffff;
+    background-color: $perfil-bg-secoes;
     font-family: $perfil-fonte-principal;
     display: flex;
     height: 50%;
