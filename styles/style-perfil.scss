@@ -1,0 +1,71 @@
+
+$perfil-cor-fonte-header: #ffffff;
+$perfil-cor-titulos: #137191;
+$perfil-cor-campos:#9391918a;
+$perfil-botao:#51BD88;
+
+
+.perfil-header{
+    background:url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+  
+   
+
+
+    .perfil-header-item{
+        display: flex;
+     
+    }
+
+    .perfil-header-btn{
+        background-color: transparent;
+        border: none;
+        color: $perfil-cor-fonte-header;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 0 1rem 0 1rem;
+        padding: 0 1.2rem;
+    }
+
+    .perfil-header-btn:hover{
+        background-color: rgba(43, 42, 42, 0.5) ;
+    }
+    
+}
+
+.perfil-logo{
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.perfil-foto-header{
+    width: 40px;
+    height: 40px;
+   margin: 0 1rem 0 1rem;
+    
+}
+
+.perfil-icone-notificacao{
+    color: $perfil-cor-fonte-header;
+    font-size: 20px;
+    padding-top: 0.5rem;
+    
+}
+
+.perfil-main{
+    width: 100vw;
+    height: calc(100vh - 60px); 
+
+    
+}
+
+
