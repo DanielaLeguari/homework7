@@ -3,8 +3,12 @@ $perfil-cor-fonte-header: #ffffff;
 $perfil-cor-titulos: #137191;
 $perfil-cor-campos:#9391918a;
 $perfil-botao:#51BD88;
+$perfil-fonte-principal:'Roboto', sans-serif;
+$perfil-bg-principal:#dcd9d9;
 
-
+.perfil-bg{
+    background-color:$perfil-bg-principal ;
+}
 .perfil-header{
     background:url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
     width: 100vw;
@@ -13,6 +17,7 @@ $perfil-botao:#51BD88;
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    
   
    
 
@@ -30,6 +35,7 @@ $perfil-botao:#51BD88;
         font-weight: bold;
         margin: 0 1rem 0 1rem;
         padding: 0 1.2rem;
+        font-family: $perfil-fonte-principal;
     }
 
     .perfil-header-btn:hover{
@@ -64,8 +70,38 @@ $perfil-botao:#51BD88;
 .perfil-main{
     width: 100vw;
     height: calc(100vh - 60px); 
+    display: grid;
+    grid-template-areas: 
+    "perfil-secao-cabecalho perfil-secao-cabecalho perfil-secao-cabecalho"
+    "perfil-secao-endereco perfil-secao-endereco perfil-secao-endereco"
+    "perfil-secao-colegas perfil-secao-colegas perfil-secao-conhecimentos";   
+}
 
+/*perfil-secao-main*/
+.perfil-item{
+    margin: 30px 70px 30px 70px;
+
+}
+.perfil-secao-cabecalho{
+    grid-area: perfil-secao-cabecalho;
+    background-color: #ffffff;
     
+}
+
+.perfil-secao-endereco{
+    grid-area: perfil-secao-endereco;
+    background-color: #ffffff;
+    
+}
+
+.perfil-secao-colegas {
+    grid-area: perfil-secao-colegas ;
+    background-color: #ffffff;
+}
+
+.perfil-secao-conhecimentos {
+    grid-area: perfil-secao-conhecimentos ;
+    background-color: #ffffff;
 }
 
 
