@@ -1,8 +1,316 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
 }
+
+$perfil-cor-fonte-header: #ffffff;
+$perfil-cor-campos: grey;
+$perfil-botao: #51bd88;
+$perfil-fonte-principal: "Roboto", sans-serif;
+$perfil-bg-principal: #dcd9d9;
+$home-bg-secoes: #F8F9FA;
+
+@mixin centralizado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin  texto-negrito-16px {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.home-bg {
+    background-color: $perfil-bg-principal;
+}
+
+.home-header {
+    background: url("../img/perfil-imagem-fundo-header.png"), linear-gradient(to bottom right, #295ba7, #78b454);
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    .home-header-item {
+        height: 80%;
+        @include centralizado();
+
+        .home-logo {
+            width: 100px;
+            height: 40px;
+            @include centralizado();
+        }
+
+        .home-search {
+            display: flex;
+            justify-content: space-between;
+            width: 20vw;
+            height: 30px;
+            font-size: 1.25rem;
+            position: relative;
+
+            .home-button-lente {
+                border: none;
+                background-color: transparent;
+                position: absolute;
+                top: 30%;
+                right: 0;
+                outline: none;
+                width: 30px;
+
+                .home-lupa {
+                    color: $perfil-cor-fonte-header;
+                }
+            }
+            .home-search-input {
+                background-color: black;
+                border: none;
+                width: 100%;
+                color: #ffffff;
+                opacity: 20%;
+                border-radius: 3px;
+            }
+        }
+
+        .home-inicio-btn {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+            color: $perfil-cor-fonte-header;
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin: 0 1rem 0 1rem;
+            padding: 0 1.2rem;
+            font-family: $perfil-fonte-principal;
+            cursor: pointer;
+            height: 100%;
+            gap: 20px; 
+        }
+
+        .home-inicio-btn:hover {
+            background-color: rgba(43, 42, 42, 0.5) !important;
+        }
+
+        .perfil-icone-notificacao {
+            color: $perfil-cor-fonte-header;
+            font-size: 20px;
+            padding-top: 0.5rem;
+        }
+
+        .home-btn-perfil {
+            @include centralizado();
+            color: white;
+            margin-left: 20px;
+            gap: 5px;
+        }
+
+        .home-foto-header {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+/*main*/
+
+.home-main {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    height: calc(100vh - 60px);
+    width: 100vw;
+    font-family: $perfil-fonte-principal;
+    
+   
+    .home-hr {
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin-bottom: 16px;
+    }
+
+    .home-titulo {
+        font-size: 0.75rem;
+        margin: 16px 0 16px 16px;
+    }
+
+    .home-noticias {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: calc(100vh - 80px);
+        width: 40%;
+        margin-top: 16px;
+        background-color: $home-bg-secoes;
+        border-radius: 5px;
+    }
+
+    .home-item {
+        padding: 0 8px;
+
+        .home-card {
+            display: flex;
+            height: 200px;
+            text-decoration: none;
+            color: black;
+            background-color:#ffffff;
+            box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+            border-radius: 5px;
+            margin-bottom: 16px;
+
+            .home-img-card {
+                height: 200px;
+                width: 200px;
+            }
+
+            .home-card-item {
+                padding: 8px 16px;
+
+                .home-titulo-card {
+                    @include texto-negrito-16px();
+                    margin-bottom: 8px;
+                }
+
+                .home-texto {
+                    font-size: .9rem;
+                    margin-bottom: 16px;
+                }
+
+                .home-texto-negrito {
+                    font-size: .875rem;
+                    font-weight: bold;
+                    margin-bottom: 16px;
+                }
+            }
+
+            .home-card-baixo{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                font-size: .8125rem;
+                padding-top: 8px;
+                
+                .home-data-card {
+                    font-size: .875rem;
+                }
+                .home-card-icons {
+                    display: flex;
+                    gap: 2px;
+                }
+            }
+        }
+    }
+
+    /*aside*/
+
+    .home-aside {
+        height: calc(100vh - 80px);
+        width: 23%;
+        margin-top: 16px;
+        font-family: $perfil-fonte-principal;
+        
+
+        .home-item-aside {
+            background-color: #ffffff;
+            padding-top: 16px;
+            border-radius: 5px 5px 0 0 ;
+
+            .home-titulo-aside {
+                padding: 0 0 16px 16px;
+                font-size: .75rem;
+            }
+
+            .home-hr-aside {
+                border: 0;
+                border-top: 1px solid #ccc;
+                padding-bottom: 16px;
+            }
+        }
+
+        .home-sistemas {
+            background-color:#ffffff;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding: 0 15px 8px;
+            gap: 10px;
+            
+            .home-card-sistemas {
+                background-color: #ffffff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 16px 10px;
+                text-align: center;
+                font-size: .875rem;
+                color: $perfil-botao;
+                text-decoration: none;
+                font-size: .75rem;
+                cursor: pointer;
+                border-radius: 5px;
+                box-shadow: 0px 2px 6px rgb(0 0 0 / 10%);
+            
+                .home-asside-icone {
+                    font-size: 2.25rem;
+                    margin-bottom: 5px;
+                }
+
+            }
+        }
+    }
+    
+    .home-aniversarios{
+        margin-top: 16px;
+        background-color:#ffffff;
+        border-radius: 5px;
+
+        .home-titulo-aniversario {
+            padding: 16px;
+            font-size: .75rem;
+        }
+
+        .home-card-aniversario {
+            display: flex;
+            padding-bottom: 16px;
+            margin-top: 16px;
+
+            .home-img-no-user {
+                width: 65px;
+                height: 65px;
+                border-radius: 50%;
+            }
+
+            .home-card-aniversario-item{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-right: 20px;
+                padding-left: 20px;
+                font-size: .9rem;
+
+                .home-texto-nome-aniversario {
+                    margin-bottom: 8px;
+                }
+
+                .home-card-aniversario-item-footer{
+                    display: flex;
+
+                    .home-texto-data-aniversario {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
