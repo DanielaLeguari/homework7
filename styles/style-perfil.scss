@@ -33,6 +33,10 @@ $perfil-bg-secoes: #FFFFFF;
         padding: 0 1.2rem;
         font-family: $perfil-fonte-principal;
         cursor: pointer;
+
+        .perfil-icone-menu{
+            margin-right: 1rem;
+        }
     }
 
     .perfil-header-btn:hover {
@@ -88,11 +92,13 @@ $perfil-bg-secoes: #FFFFFF;
         align-items: center;
         color: $perfil-cor-fonte-header;
         font-family: $perfil-fonte-principal;
-        height: 50%;
+        height: 45%;
 
         .perfil-foto-coloborador {
+            width: 150px;
             align-items: center;
-            margin: 1rem;
+            margin: 0 1rem;
+            margin-left: 4rem;
         }
 
         .perfil-lista-dados {
