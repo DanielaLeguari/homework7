@@ -35,9 +35,9 @@ $home-bg-secoes: #F8F9FA;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    padding: 0 40px;
 
-    .perfil-header-item {
+    .home-header-item {
         height: 80%;
         @include centralizado();
 
@@ -91,11 +91,11 @@ $home-bg-secoes: #F8F9FA;
             font-family: $perfil-fonte-principal;
             cursor: pointer;
             height: 100%;
-            gap: 20px;
+            gap: 20px; 
+        }
 
-            &:hover {
-                background-color: rgba(43, 42, 42, 0.5);
-            }
+        .home-inicio-btn:hover {
+            background-color: rgba(43, 42, 42, 0.5) !important;
         }
 
         .perfil-icone-notificacao {
@@ -293,6 +293,7 @@ $home-bg-secoes: #F8F9FA;
                 justify-content: center;
                 padding-right: 20px;
                 padding-left: 20px;
+                font-size: .9rem;
 
                 .home-texto-nome-aniversario {
                     margin-bottom: 8px;
