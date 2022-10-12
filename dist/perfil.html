@@ -12,22 +12,50 @@
         integrity="sha512-j+8sk90CyNqD7zkw9+AwhRuZdEJRLFBUg10GkELVu+EJqpBv4u60cshAYNOidHRgyaKNKhz+7xgwodircCS01g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Perfil</title>
-<script defer src="bundle.js?b819ce6a32897fc8563f"></script><link href="style.css?b819ce6a32897fc8563f" rel="stylesheet"></head>
+<script defer src="bundle.js?a261264bedbd142399d2"></script><link href="style.css?a261264bedbd142399d2" rel="stylesheet"></head>
 
-<body>
+<body class="perfil-bg">
 
     <header class="perfil-header">
         <div class="perfil-header-item">
             <img class="perfil-logo" src="./img/header-perfil-logo.png" alt="">
-            <button class="perfil-header-btn">Pessoas-Colaborador</button>
+            <button class="perfil-header-btn" type="button">Pessoas - Colaborador</button>
         </div>
-        <div>
-            <i class="fa-sharp fa-solid fa-bell"></i>
-            <img src="./img/header-foto.png" alt="">
+        <div class="perfil-header-item">
+            <i class="fa-sharp fa-solid fa-bell perfil-icone-notificacao"></i>
+            <img class="perfil-foto-header" src="./img/header-foto.png" alt="">
         </div>
     </header>
     <main class="perfil-main">
-        <h1>teste</h1>
+        <section class="perfil-item perfil-secao-cabecalho">
+            <div class="perfil-cabecalho-usuario">
+                <div class="perfil-informacoes-contato">
+                    <img class="perfil-foto-coloborador" src="./img/header-foto.png" alt="">
+                    <ul>
+                        <li class="perfil-lista-dados">Login: Fulano de Tal</li>
+                        <li class="perfil-lista-dados">Email:teste@email.com</li>
+                        <li class="perfil-lista-dados">Nascimento: 00/00/0000</li>
+                    </ul>
+                </div>
+                <div class="perfil-informacoes-gerais">informacoes gerais</div>
+            </div>
+        </section>
+
+        <section class="perfil-item perfil-secao-endereco">
+            <h3>Endereco</h3>
+        </section>
+
+        <section class="perfil-item perfil-secao-colegas">
+            <h3 class="perfil-titulo-colegas">Veja o que nossos colegas estão falando sobre você</h3>
+        <button class="perfil-btn-secao-colegas" type="button">Recebidos</button>
+        <button class="perfil-btn-secao-colegas" type="button">Concedidos</button>
+        </section>
+
+        <section class="perfil-item perfil-secao-conhecimentos">
+            <h3 class="perfil-titulo-conhecimentos"><i class="fa-solid fa-book perfil-icone-livro"></i>Conhecimentos
+            </h3>
+            <button class="perfil-btn-add" type="submit">+Adicionar</button>
+        </section>
     </main>
 
 

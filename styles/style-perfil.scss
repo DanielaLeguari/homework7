@@ -1,10 +1,10 @@
 $perfil-cor-fonte-header: #ffffff;
 $perfil-cor-titulos: #137191;
-$perfil-cor-campos: #9391918a;
+$perfil-cor-campos: grey;
 $perfil-botao: #51BD88;
 $perfil-fonte-principal: 'Roboto', sans-serif;
 $perfil-bg-principal: #dcd9d9;
-$perfil-bg-secoes:#FFFFFF;
+$perfil-bg-secoes: #FFFFFF;
 
 .perfil-bg {
     background-color: $perfil-bg-principal ;
@@ -32,6 +32,7 @@ $perfil-bg-secoes:#FFFFFF;
         margin: 0 1rem 0 1rem;
         padding: 0 1.2rem;
         font-family: $perfil-fonte-principal;
+        cursor: pointer;
     }
 
     .perfil-header-btn:hover {
@@ -52,14 +53,12 @@ $perfil-bg-secoes:#FFFFFF;
     width: 40px;
     height: 40px;
     margin: 0 1rem 0 1rem;
-
 }
 
 .perfil-icone-notificacao {
     color: $perfil-cor-fonte-header;
     font-size: 20px;
     padding-top: 0.5rem;
-
 }
 
 /*perfil-secao-main*/
@@ -82,26 +81,28 @@ $perfil-bg-secoes:#FFFFFF;
     grid-area: perfil-secao-cabecalho;
     background-color: $perfil-bg-secoes;
 
-    .perfil-informacoes-contato{
+    .perfil-informacoes-contato {
         background: url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
         height: 50%;
         display: flex;
         align-items: center;
-        color:$perfil-cor-fonte-header;
+        color: $perfil-cor-fonte-header;
         font-family: $perfil-fonte-principal;
-         .perfil-foto-coloborador{
+
+        .perfil-foto-coloborador {
             align-items: center;
             margin: 1rem;
-         }
-        .perfil-lista-dados{
+        }
+
+        .perfil-lista-dados {
             list-style-type: none;
             margin-left: 1rem;
             line-height: 1.5rem;
             font-size: 14px;
-         }
+        }
     }
 
-    .perfil-informacoes-gerais{
+    .perfil-informacoes-gerais {
         height: 50%;
     }
 }
@@ -119,4 +120,54 @@ $perfil-bg-secoes:#FFFFFF;
 .perfil-secao-conhecimentos {
     grid-area: perfil-secao-conhecimentos;
     background-color: #ffffff;
+    font-family: $perfil-fonte-principal;
+    display: flex;
+
+    .perfil-titulo-conhecimentos{
+        color: $perfil-cor-titulos;
+        margin: 1rem;
+        font-weight: 400;
+    }
+
+    .perfil-icone-livro{
+        color: $perfil-cor-titulos;
+        margin-right: 1rem;
+    }
+
+    .perfil-btn-add{
+        background-color: $perfil-botao;
+        border: none;
+        border-radius: 20px;
+        color: $perfil-cor-fonte-header;
+        width: 100px;
+        height: 25px;
+        margin: 1rem;
+        cursor: pointer;
+    }
 }
+
+.perfil-secao-colegas{
+   font-family: $perfil-fonte-principal; 
+     
+    .perfil-titulo-colegas{
+        font-weight: 400;
+        color: $perfil-cor-titulos;
+        display: flex;
+        margin:0.5rem;
+     }
+
+     .perfil-btn-secao-colegas{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $perfil-cor-titulos;
+        color:$perfil-cor-campos;
+        padding: 0.5rem;
+        width: 150px; 
+        margin:0.5rem;
+        cursor: pointer;
+         
+     }
+}
+
+
+
