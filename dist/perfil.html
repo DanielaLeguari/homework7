@@ -12,14 +12,14 @@
         integrity="sha512-j+8sk90CyNqD7zkw9+AwhRuZdEJRLFBUg10GkELVu+EJqpBv4u60cshAYNOidHRgyaKNKhz+7xgwodircCS01g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Perfil</title>
-<script defer src="bundle.js?a261264bedbd142399d2"></script><link href="style.css?a261264bedbd142399d2" rel="stylesheet"></head>
+<script defer src="bundle.js?90aaeead1602d655f586"></script><link href="style.css?90aaeead1602d655f586" rel="stylesheet"></head>
 
 <body class="perfil-bg">
 
     <header class="perfil-header">
         <div class="perfil-header-item">
             <img class="perfil-logo" src="./img/header-perfil-logo.png" alt="">
-            <button class="perfil-header-btn" type="button">Pessoas - Colaborador</button>
+            <button class="perfil-header-btn" type="button"><i class="fa-sharp fa-solid fa-bars perfil-icone-menu"></i>Pessoas - Colaborador</button>
         </div>
         <div class="perfil-header-item">
             <i class="fa-sharp fa-solid fa-bell perfil-icone-notificacao"></i>
@@ -27,34 +27,169 @@
         </div>
     </header>
     <main class="perfil-main">
-        <section class="perfil-item perfil-secao-cabecalho">
-            <div class="perfil-cabecalho-usuario">
-                <div class="perfil-informacoes-contato">
-                    <img class="perfil-foto-coloborador" src="./img/header-foto.png" alt="">
-                    <ul>
-                        <li class="perfil-lista-dados">Login: Fulano de Tal</li>
-                        <li class="perfil-lista-dados">Email:teste@email.com</li>
-                        <li class="perfil-lista-dados">Nascimento: 00/00/0000</li>
-                    </ul>
+        <section class=" perfil-secao-cabecalho">
+
+            <div class="perfil-informacoes-contato">
+                <img class="perfil-foto-coloborador" src="./img/header-foto.png" alt="">
+                <ul>
+                    <li class="perfil-lista-dados">Login: fulano.de.tal</li>
+                    <li class="perfil-lista-dados">Email:teste@email.com</li>
+                    <li class="perfil-lista-dados">Nascimento: 00/00/0000</li>
+                </ul>
+            </div>
+            <div class="perfil-dados-usuario">
+                <div class="perfil-dados-usuario-linha">
+                    <div class="perfil-dados-usuario-coluna">
+                        <h3>Fulano de Tal</h3>
+                        <p>Estagiário</p>
+                        <p>Setor</p>
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="pronome">Pronome:</label>
+                        <select id="pronome" name="pronome" class="perfil-campos">
+                            <option value="1">Ela/Dela</option>
+                            <option value="2">Ele/Dele</option>
+                        </select>
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="gerente">Gerente de Recurso</label>
+                        <input type="text" id="gerente" value="Fulano" class="perfil-campos">
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" value="(55)1214-4511" class="perfil-campos">
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                        <label for="ramal">Ramal</label>
+                        <input type="tel" id="ramal" value="Ramal" class="perfil-campos">
+                    </div>
                 </div>
-                <div class="perfil-informacoes-gerais">informacoes gerais</div>
+                <div class="perfil-dados-usuario-linha">
+                    <div class="perfil-dados-usuario-coluna">
+                    </div>
+                    <div class="perfil-dados-usuario-coluna">
+                    </div>
+
+                    <div class="perfil-dados-usuario-coluna">
+                        <div>
+                            <input type="checkbox" id="gerente-comercial">
+                            <label for="gerente-comercial">Gerente Comercial</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="gerente-cb">
+                            <label for="gerente-cb">Gerente</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="lider">
+                            <label for="lider">Líder</label>
+                        </div>
+                    </div>
+
+                    <div class="perfil-dados-usuario-coluna">
+                        <div>
+                            <input type="checkbox" id="gerente-op">
+                            <label for="gerente-op">Gerente de operações</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="lider-rh">
+                            <label for="lider-rh">Líder de RH</label>
+                        </div>
+                    </div>
+
+                    <div class="perfil-dados-usuario-coluna">
+                        <div>
+                            <input type="checkbox" id="filhos">
+                            <label for="filhos">Tenho filho(a)</label>
+                        </div>
+                    </div>
+                    <div class="perfil-dados-usuario-coluna col-bottom">
+                        <div>
+                            <input type="checkbox" id="ativo">
+                            <label for="ativo">Ativo</label>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         </section>
 
-        <section class="perfil-item perfil-secao-endereco">
-            <h3>Endereco</h3>
+        <section class=" perfil-secao-endereco">
+
+            <div class="perfil-secao-endereco-linha altura-30">
+                <h3>Endereço</h3>
+            </div>
+            <div class="perfil-secao-endereco-linha">
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="cep">CEP</label>
+                    <input type="text" id="cep" value="00000-000" class="perfil-campos">
+                </div>
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="tipo-logradouro">Tipo de logradouro</label>
+                    <select id="tipo-logradouro" name="tipo-logradouro" class="perfil-campos">
+                        <option value="1">Rua</option>
+                        <option value="2">Avenida</option>
+                    </select>
+                </div>
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="rua">Rua</label>
+                    <input type="text" id="rua" value="Rua Amazonas" class="perfil-campos">
+                </div>
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="numero">Numero</label>
+                    <input type="text" id="numero" value="777" class="perfil-campos">
+                </div>
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" id="complemento" value="Apto" class="perfil-campos">
+                </div>
+                <div class="perfil-secao-endereco-coluna"></div>
+            </div>
+            <div class="perfil-secao-endereco-linha">
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro" value="Jardim" class="perfil-campos">
+                </div>
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade" value="Toledo" class="perfil-campos">
+                </div>
+                <div class="perfil-secao-endereco-coluna">
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" value="PR" class="perfil-campos">
+                </div>
+
+                <div class="perfil-secao-endereco-coluna"></div>
+                <div class="perfil-secao-endereco-coluna"></div>
+                <div class="perfil-secao-endereco-coluna"></div>
+            </div>
+
         </section>
 
-        <section class="perfil-item perfil-secao-colegas">
+        <section class=" perfil-secao-colegas">
             <h3 class="perfil-titulo-colegas">Veja o que nossos colegas estão falando sobre você</h3>
-        <button class="perfil-btn-secao-colegas" type="button">Recebidos</button>
-        <button class="perfil-btn-secao-colegas" type="button">Concedidos</button>
+            <div class="perfil-secao-colegas-linha"><button class="perfil-btn-secao-colegas"
+                    type="button">Recebidos</button>
+                <button class="perfil-btn-secao-colegas" type="button">Concedidos</button>
+            </div>
+            <div class="perfil-secao-colegas-linha">
+                <p class="perfil-secao-colegas-feedback">Nenhum feedback recebido ainda</p>
+            </div>
         </section>
-
-        <section class="perfil-item perfil-secao-conhecimentos">
-            <h3 class="perfil-titulo-conhecimentos"><i class="fa-solid fa-book perfil-icone-livro"></i>Conhecimentos
-            </h3>
-            <button class="perfil-btn-add" type="submit">+Adicionar</button>
+        <!--secao conhecimentos-->
+        <section class=" perfil-secao-conhecimentos">
+            <div class="perfil-secao-conhecimento-linha">
+                <div class="perfil-secao-conhecimento-cabecalho">
+                    <h3 class="perfil-titulo-conhecimentos"><i
+                            class="fa-solid fa-book perfil-icone-livro"></i>Conhecimentos
+                    </h3>
+                    <button class="perfil-btn-add" type="submit">+Adicionar</button>
+                </div>
+            </div>
+            <div class="perfil-secao-conhecimento-linha">
+                <p class="perfil-secao-conhecimento-texto">Nenhum conhecimento cadastrado</p>
+            </div>
         </section>
     </main>
 

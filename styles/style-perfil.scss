@@ -6,6 +6,16 @@ $perfil-fonte-principal: 'Roboto', sans-serif;
 $perfil-bg-principal: #dcd9d9;
 $perfil-bg-secoes: #FFFFFF;
 
+@mixin linha {
+    display: flex;
+    flex-direction: row;
+    background-color: $perfil-bg-secoes;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 .perfil-bg {
     background-color: $perfil-bg-principal ;
 }
@@ -34,7 +44,7 @@ $perfil-bg-secoes: #FFFFFF;
         font-family: $perfil-fonte-principal;
         cursor: pointer;
 
-        .perfil-icone-menu{
+        .perfil-icone-menu {
             margin-right: 1rem;
         }
     }
@@ -95,7 +105,7 @@ $perfil-bg-secoes: #FFFFFF;
         height: 45%;
 
         .perfil-foto-coloborador {
-            width: 150px;
+            height: 90%;
             align-items: center;
             margin: 0 1rem;
             margin-left: 4rem;
@@ -115,13 +125,7 @@ $perfil-bg-secoes: #FFFFFF;
         flex-direction: column;
 
         .perfil-dados-usuario-linha {
-            display: flex;
-            flex-direction: row;
-            background-color: $perfil-bg-secoes;
-            width: 100%;
-            height: 100%;
-            padding-left: 5px;
-            padding-right: 5px;
+            @include linha();
 
             .perfil-dados-usuario-coluna {
 
@@ -172,17 +176,11 @@ $perfil-bg-secoes: #FFFFFF;
     flex-direction: column;
 
     .perfil-secao-endereco-linha {
-        display: flex;
-        flex-direction: row;
-        background-color: $perfil-bg-secoes;
-        width: 100%;
-        height: 100%;
-        padding-left: 5px;
-        padding-right: 5px;
+        @include linha();
 
-        h3{
+        h3 {
             font-weight: 400;
-            color:$perfil-cor-titulos;
+            color: $perfil-cor-titulos;
             margin-top: 5px;
             margin-left: 5px;
         }
@@ -191,7 +189,7 @@ $perfil-bg-secoes: #FFFFFF;
             width: 100%;
             padding: 5px;
 
-            
+
 
             .perfil-campos {
                 width: 100%;
@@ -207,7 +205,7 @@ $perfil-bg-secoes: #FFFFFF;
         }
     }
 
-    .altura-30{
+    .altura-30 {
         height: 30%;
     }
 
@@ -261,8 +259,8 @@ $perfil-bg-secoes: #FFFFFF;
     background-color: $perfil-bg-secoes;
     font-family: $perfil-fonte-principal;
     display: flex;
-    height: 50%;
     flex-direction: column;
+    margin-bottom: 20px;
 
     .perfil-titulo-conhecimentos {
         color: $perfil-cor-titulos;
