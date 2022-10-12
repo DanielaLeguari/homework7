@@ -63,23 +63,21 @@ $perfil-bg-secoes: #FFFFFF;
 
 /*perfil-secao-main*/
 .perfil-main {
-    width: 100vw;
+    width:90vw;
     height: calc(100vh - 60px);
     display: grid;
+    gap: 15px;
+    margin:0 auto;
     grid-template-areas:
         "perfil-secao-cabecalho perfil-secao-cabecalho perfil-secao-cabecalho"
         "perfil-secao-endereco perfil-secao-endereco perfil-secao-endereco"
         "perfil-secao-colegas perfil-secao-colegas perfil-secao-conhecimentos";
 }
 
-
-.perfil-item {
-    margin: 30px 70px 30px 70px;
-}
-
 .perfil-secao-cabecalho {
     grid-area: perfil-secao-cabecalho;
     background-color: $perfil-bg-secoes;
+    margin-top: 15px;
 
     .perfil-informacoes-contato {
         background: url('../img/perfil-imagem-fundo-header.png'), linear-gradient(to bottom right, #295ba7, #78b454);
@@ -115,6 +113,35 @@ $perfil-bg-secoes: #FFFFFF;
 .perfil-secao-colegas {
     grid-area: perfil-secao-colegas;
     background-color: $perfil-bg-secoes;
+    margin-bottom: 20px;
+    
+
+}
+
+
+
+.perfil-secao-colegas{
+   font-family: $perfil-fonte-principal; 
+     
+    .perfil-titulo-colegas{
+        font-weight: 400;
+        color: $perfil-cor-titulos;
+        display: flex;
+        margin:0.5rem;
+     }
+
+     .perfil-btn-secao-colegas{
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $perfil-cor-titulos;
+        color:$perfil-cor-campos;
+        padding: 0.5rem;
+        width: 300px; 
+        margin:0.5rem;
+        cursor: pointer;
+        
+         
+     }
 }
 
 .perfil-secao-conhecimentos {
@@ -122,6 +149,8 @@ $perfil-bg-secoes: #FFFFFF;
     background-color: #ffffff;
     font-family: $perfil-fonte-principal;
     display: flex;
+    height: 50%;
+    
 
     .perfil-titulo-conhecimentos{
         color: $perfil-cor-titulos;
@@ -146,28 +175,7 @@ $perfil-bg-secoes: #FFFFFF;
     }
 }
 
-.perfil-secao-colegas{
-   font-family: $perfil-fonte-principal; 
-     
-    .perfil-titulo-colegas{
-        font-weight: 400;
-        color: $perfil-cor-titulos;
-        display: flex;
-        margin:0.5rem;
-     }
 
-     .perfil-btn-secao-colegas{
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid $perfil-cor-titulos;
-        color:$perfil-cor-campos;
-        padding: 0.5rem;
-        width: 150px; 
-        margin:0.5rem;
-        cursor: pointer;
-         
-     }
-}
 
 
 
